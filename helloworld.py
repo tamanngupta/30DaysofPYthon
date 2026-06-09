@@ -1,0 +1,7 @@
+print(57457 + 53475375)
+print("Hello World")
+print(type(65467465+4837438))
+print("shit")
+print(type("Hello World"))
+print(["ambrosia","shit","wow","covenant"])
+print(type(56.5454))
