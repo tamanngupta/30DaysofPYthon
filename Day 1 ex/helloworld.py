@@ -1,6 +1,6 @@
-print(57457 + 53475375)
+print(57457 + 53375)
 print("Hello World")
-print(type(65467465+4837438))
+print(type(57457 + 53475375))
 print("shit")
 print(type("Hello World"))
 print(["ambrosia","shit","wow","covenant"])
