@@ -4,3 +4,4 @@ a = pi * r**2
 c = 2 * pi * r
 print(f"the are of the circle is {a}")
 print(f"the circumference is: {c}")
+
