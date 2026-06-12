@@ -17,3 +17,4 @@ l = float(input("length of a rectangle is:"))
 b = float(input("breadth of rectangle is:"))
 area_of_rectangle = l*b
 print(f"The are of reactangle is {area_of_rectangle}")
+
