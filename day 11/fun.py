@@ -201,3 +201,4 @@ def tye(ls):
     return 'all data is of same type'
 print(tye([32,'wer', 43.2]))
 
+N
