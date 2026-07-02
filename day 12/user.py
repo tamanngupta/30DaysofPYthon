@@ -30,11 +30,3 @@ def rgb():
 
 print(rgb())
 
-def hexa():
-    poo = ['a', 'b', 'c', 'd', 'e', 'f', range(0,11)]
-    unir = ''
-    for _ in range(6):
-        unir += random.choice(poo)
-    return unir
-
-print(hexa())
