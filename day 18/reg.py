@@ -44,16 +44,6 @@ print(f'the value required = {abs(h)}')
 
 
 
-def is_valid_variable(variable_name):
-    # Valid variables start with a letter or underscore, followed by letters, digits, or underscores
-    pattern = r'^[A-Za-z_][A-Za-z0-9_]*$'
-    
-    # re.match returns a match object if valid, or None if invalid
-    if re.match(pattern, variable_name):
-        return True
-    else:
-        return False
-
 
 
 
@@ -65,7 +55,7 @@ def is_valid(variable_name):
     else:
         return False
 
-print(is_valid_variable('first_name'))   
-print(is_valid_variable('first-name'))   
-print(is_valid_variable('1first_name'))  
-print(is_valid_variable('firstname'))   
+print(is_valid('first_name'))   
+print(is_valid('first-name'))   
+print(is_valid('1first_name'))  
+print(is_valid_('firstname'))   
