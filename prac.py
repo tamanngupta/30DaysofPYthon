@@ -1,11 +1,7 @@
-class Solution:
-    def twoSum(self, nums, target):
-        seen = {}
-        for index, m in enumerate(nums):
-            n = target - m
-            
-            if n in seen:
-                return [seen[n], index]
-            seen[m] = index
-            
-        return []
+lst = []
+
+for i in range(2000, 3200):
+    if i%7  == 0 and i%5 !=0: 
+        lst.append(i)
+
+print(lst)
