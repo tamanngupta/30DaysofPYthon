@@ -12,3 +12,4 @@ m = int(input('enter your number: '))
 lst = [{i: i*i} for i in range(1,m)]
 
 print(lst)
+
