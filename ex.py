@@ -24,7 +24,7 @@ urlll = 'https://api.thecatapi.com/v1/breeds'
 
 response = requests.get(urlll)
 
-if response == 200:
+if response.status_code == 200:
     txt = response.text
 
 weights = re.findall('weight')
