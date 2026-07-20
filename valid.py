@@ -1,15 +1,13 @@
-email = input('whats your email? ').strip()
-#strip allows you to ignore any leading whitespaces or ending ones just pure text
+import re
 
+email = input('whats your email?: ').strip()
+#re.search(what to find, where to find, what to flag)
+#  . is any charecter except a new line, * 0 or more repetition, + 1 or more repetitions, ? 0 or 1 repetition, this is for how many times you want a specific charecter to repeat eg/ {m} means m repetitions of say digits 
 
-username, domain = email.split('@')
-#to get a username and domain name 
-# you can just define two variables in one single line if you know the kind of value you will get otherwise you can always use a list
-
-if username and domain.endswith('.edu') : #this checks for the presence of a username, a truthee value if you will. It doesn't bother with anything else this just makes sure that the value exists and is not to set at none 
+if re.search(r"^[a-zA-Z0-9_]+@[a-zA-Z0-9_]]+\.edu$", email): 
     print('valid')
-else:
-    print('invalid')
+else: 
+    print('invalid ')
 
-#this can create the confusion that we are saying that we need username and . in domain name but the proper syntax for that would actually be if username in domain name and . in username these are 2 separate boolean expressions 
-#there still need to be a domain name, so we need to have a boolean expressions which is quite hard 
+
+#use hypen for a through z no adding spaces or commmas 
