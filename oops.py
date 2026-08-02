@@ -1,32 +1,44 @@
-class Student(): 
-    def __init__(self, name, house): #the first parameter is just the memory storage so always remember that the first attribute is storage SELF IS TO STORE IN THE OBJECT THAT YOU JUST CREATED  
+class Student:
+    #when a function is inside a class its known as method. init and str are special methods that python has built in 
+    def __init__(self, name, house):
+        self.name = name
+        self.house = house 
         if not name:
             raise ValueError
-        
-        #__str__ is used to call function when anyone wants to see your function as a string 
-        if house not in ['Gryffindor', 'Slytherin', 'Ravenclaw', 'Hufflepuff']:
+        if house not in ['Gryffindor', 'slytherin', 'Hufflepuff', 'RavenClaw']:
             raise ValueError('Invalid house name')
-        self.name = name
-        self.house = house
-
+    
     def __str__(self):
-        return f"{self.name} from {self.house}"
+        return f"{self.name} from {self.house}."
+
+
+#getter
+    def house(self):
+        return self.house
+#setter
+    def house(self, house):
+        if house not in ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'slytherin']
+        self.house = house 
+#a getter is a function for the class that gets some attribute. a setter sets some value. 
+
+#whenever you create a function in a class it always must take one attribute which is self to give you access to the current object in question
+   
+#we can circumvent conditions that are built in the classes by harcoding them later on
+#therefore even thought we have more control over the code we can still modifyl things 
+#a property is just an attribute that has more defence mechanisms in plac. It is a function in python. IT IS A DECORATOR.
 
 def main():
     student = get_student()
-    print(student) #we are calling student as a string so we need to add the __str__method 
+    print(student)
 
 def get_student():
-    name = input('Name: ')
-    house = input('House: ')
-    student = Student(name, house) #this line is a constructor it constructs student. due to the self parameter that we used we dont have to 
+    name = input('name: ')
+    house = input('house: ')
+    student = Student(name, house)
     return student
+
+
+
 
 if __name__ == '__main__':
     main()
-
-    # we can use sys.ecit to exit the program 
-    #in dictionary if you enter an attribute it has to accept it however in class you have complete control over the data you want to accept 
-#we can also import classes in other files 
-#if I do house = None so I can either assign a value to house otherwise it is optional
-#we can create our own errors with classes as well
